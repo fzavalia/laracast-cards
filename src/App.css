@@ -72,7 +72,7 @@
 
 .difficulty-graph-bar {
   background-color: white;
-  height: 0.3rem;
+  height: 4px;
   width: 20px;
   border-radius: 0.9rem;
 }
