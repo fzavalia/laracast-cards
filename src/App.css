@@ -1,22 +1,116 @@
-.App {
-  text-align: center;
+.cards {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.App-logo {
-  height: 40vmin;
+.card {
+  margin: 0 1rem 1rem;
+  border-radius: 0.9rem;
+  box-shadow: 4px 4px 15px 0 rgba(36, 37, 38, 0.08);
+  display: flex;
+  max-width: 400px;
+  height: 300px;
+  transition: box-shadow 200ms;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card:hover {
+  box-shadow: 4px 4px 40px 0 rgba(36, 37, 38, 0.2);
+}
+
+.left {
+  background: linear-gradient(180deg, #f44881, #ec454f);
+  border-radius: 0.9rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
   color: white;
+  padding: 1rem;
+  flex: 1;
 }
 
-.App-link {
-  color: #09d3ac;
+.left.red {
+  background: linear-gradient(180deg, #f44881, #ec454f);
+}
+
+.left.blue {
+  background: linear-gradient(180deg, #21c8f6, #637bff);
+}
+
+.left.purple {
+  background: linear-gradient(0deg, #8b60ed, #b372bd);
+}
+
+.left.yellow {
+  background: linear-gradient(0deg, #f19a1a, #ffc73c);
+}
+
+.technology {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  width: 100%;
+  border-radius: 0.9rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.logo > img {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.difficulty {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  font-size: 0.8rem;
+}
+
+.difficulty-graph-bar {
+  background-color: white;
+  height: 0.3rem;
+  width: 20px;
+  border-radius: 0.9rem;
+}
+
+.difficulty-graph-bar.off {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.difficulty-graph {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: inherit;
+}
+
+.difficulty-detail {
+  margin-left: 0.5rem;
+}
+
+.right {
+  padding: 1rem;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.description {
+  flex: 1;
+  font-size: 0.8rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #8795a1;
 }
