@@ -12,7 +12,7 @@
   display: flex;
   max-width: 400px;
   height: 300px;
-  transition: box-shadow 200ms;
+  transition: box-shadow 200ms ease-out;
 }
 
 .card:hover {
@@ -54,6 +54,13 @@
   border-radius: 0.9rem;
   display: inline-block;
   text-align: center;
+  transition: background-color, color 200ms ease-out;
+}
+
+.technology:hover {
+  color: #3d4852;
+  background-color: white;
+  cursor: pointer;
 }
 
 .logo > img {
